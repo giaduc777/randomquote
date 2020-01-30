@@ -1,0 +1,21 @@
+.ButtonContainer{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+.NewQuote{
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.mediaLink{
+  margin-right: 8px;
+  color: black;
+  transform: translateX(-135px);
+}
+
+.mediaLinkBox{
+  transform: translateX(-55px);
+}

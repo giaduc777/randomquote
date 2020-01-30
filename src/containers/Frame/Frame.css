@@ -1,0 +1,38 @@
+.Frame {
+    width: 460px;
+    min-height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: all 1.5s ease-out;
+}
+
+.color1{
+    background-color: rgb(240, 81, 18);
+}
+
+.color2{
+    background-color: rgb(129, 155, 224);
+}
+
+.color3{
+    background-color: rgb(226, 138, 175);
+}
+
+.color4{
+    background-color: rgb(50, 112, 47);
+}
+
+.color5{
+    background-color: rgb(162, 54, 212);
+}
+
+.color6{
+    background-color: rgb(146, 216, 212);
+}
+
+.color7{
+    background-color: rgb(105, 233, 122);
+}
