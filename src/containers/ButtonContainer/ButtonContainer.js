@@ -13,7 +13,7 @@ class ButtonContainer extends Component{
                 '" ' + this.props.content.author} target="_blank" 
                 rel="noopener noreferrer">
                 <i className={"fa fa-twitter"}></i>
-                </a><a><i className={"fa fa-facebook-square"}></i></a>
+                </a><a href="https://github.com/giaduc777/randomquote" target="__blank"><i className={"fa fa-github"}></i></a>
                 </li>
                 
                 <li><button className={classes.NewQuote}

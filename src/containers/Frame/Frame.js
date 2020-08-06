@@ -13,10 +13,8 @@ class Frame extends Component{
   }
 
   componentDidMount(){
-
     axios.get('https://api.quotable.io/random')
     .then(res => {
-       // console.log(res.data.content);
         this.setState({
             quote: res.data.content,
             author: res.data.author
@@ -27,7 +25,6 @@ class Frame extends Component{
   getColor = () => {
 
     let prevColor = this.state.color;
-
     let newColor = Math.floor(Math.random()  * 7 + 1);
 
     if(prevColor === newColor && prevColor !== 7){
@@ -51,7 +48,8 @@ class Frame extends Component{
     axios.get('https://api.quotable.io/random')
     .then(res => {
         this.setState({
-            quote: res.data.content
+            quote: res.data.content,
+            author: res.data.author
         })
     })
   }
@@ -60,9 +58,11 @@ class Frame extends Component{
 
     return(
       <div className={[classes.Frame, classes['color' + this.state.color]].join(' ')}>
+        <div className={classes.container}>
         <Quote content={this.state} />
         <ButtonContainer content={this.state} 
-          buttonHandler={() => this.buttonHandler()} />
+        buttonHandler={() => this.buttonHandler()} />
+        </div>
       </div>
     )
   }
