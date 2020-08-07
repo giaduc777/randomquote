@@ -12,8 +12,8 @@ class ButtonContainer extends Component{
                 <li className={classes.mediaLinkBox}><a className={classes.mediaLink} href={twitter + '"' + this.props.content.quote + 
                 '" ' + this.props.content.author} target="_blank" 
                 rel="noopener noreferrer">
-                <i className={"fa fa-twitter"}></i>
-                </a><a href="https://github.com/giaduc777/randomquote" target="__blank"><i className={"fa fa-github"}></i></a>
+                <i className={"fab fa-twitter"}></i>
+                </a><a href="https://github.com/giaduc777/randomquote" target="__blank"><i className={"fab fa-github"}></i></a>
                 </li>
                 
                 <li><button className={classes.NewQuote}

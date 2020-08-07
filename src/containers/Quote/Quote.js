@@ -4,7 +4,6 @@ import classes from './Quote.css';
 class Quote extends Component{
     
     render(){
-console.log(">>>>>>>>>>>>>>", this.props.content.author)
         return(
             <div className={classes.container}>
                <div className={classes.quote}>"{this.props.content.quote}"</div>
